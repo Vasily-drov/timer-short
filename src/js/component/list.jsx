@@ -32,13 +32,18 @@ const List = () => {
 		  	<button >+</button>
 		</form>
 		<ul>
-		  {tasks.map((task, index) => {
+		  {tasks.length > 0 ? 
+			
+		  tasks.map((task, index) => {
+		
 			return <div >
 					<li id = {index} key={index} >{task} 
 						<button onClick={()=>deleteTask(index)}>X</button>
 					 </li>
 				</div>;
-		  })}
+		  }): 'No tasks add a task'
+		  
+		  }
 		</ul>
 	  </div>
 	);
