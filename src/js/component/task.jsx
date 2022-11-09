@@ -12,7 +12,7 @@ const Task = (props) => {
         }}
         className="delete-button"
       >
-        <i className="fas fa-times"></i>
+        <i className="fas fa-times newclas"></i>
       </span>
     </li>
   );
